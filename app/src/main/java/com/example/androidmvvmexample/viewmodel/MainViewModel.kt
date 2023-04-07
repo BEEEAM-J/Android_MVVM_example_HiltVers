@@ -17,15 +17,6 @@ class MainViewModel @Inject constructor(
     private val _loginStatus = MutableLiveData<String>()
     val loginStatus: LiveData<String> = _loginStatus
 
-//    private val _usrId = MutableLiveData<String>()
-//    val usrId: LiveData<String> = _usrId
-//
-//    private val _usrPw = MutableLiveData<String>()
-//    val usrPd: LiveData<String> = _usrPw
-
-//    var usrName: String? = usrPd.toString()
-//    var usrPasswd: String? = usrId.toString()
-
     fun loadResult(usrName: String, usrPasswd: String) {
         Log.d("태그1", "${usrName}, ${usrPasswd}")
         if (usrName != null && usrPasswd != null) {
